@@ -230,6 +230,8 @@
 
         eaiConceptualViewService.getConceptualView().then(function (data) {
           $scope.conceptualViewData = data.data;
+		  //ADD THIS LINE to initialise it when the data arrives
+		  $scope.filteredConceptualView = data.data;
 
           var tempFlowNames = [];
           var tempIntNames = [];
